@@ -8,38 +8,31 @@ public class IsIntegerRuleTest {
 
     @Test
     void check_returnsTrue_whenValueIsPositive(){
-        boolean result = rule.check("40");
-        assertTrue(result);
+        assertTrue(rule.check("40"));
     }
     @Test
     void check_returnsTrue_whenValueIsNegative(){
-        boolean result = rule.check("-7");
-        assertTrue(result);
+        assertTrue(rule.check("-7"));
     }
     @Test
     void check_returnsFalse_whenValueIsAlphabetical(){
-        boolean result = rule.check("abc");
-        assertFalse(result);
+        assertFalse(rule.check("abc"));
     }
     @Test
     void check_returnsFalse_whenValueIsEmptyString(){
-        boolean result = rule.check("");
-        assertFalse(result);
+        assertFalse(rule.check(""));
     }
     @Test
     void check_returnsFalse_whenValueIsNull(){
-        boolean result = rule.check(null);
-        assertFalse(result);
+        assertFalse(rule.check(null));
     }
     @Test
     void check_returnsFalse_whenValueIsFloat(){
-        boolean result = rule.check("1.5");
-        assertFalse(result);
+        assertFalse(rule.check("1.5"));
     }
     @Test
     void check_returnsTrue_whenValuePaddedWithWhitespace(){
-        boolean result = rule.check("   40   ");
-        assertTrue(result);
+        assertTrue(rule.check("   40   "));
     }
 }
 

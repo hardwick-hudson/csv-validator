@@ -12,7 +12,7 @@ public class RegexMatchRule {
 
     public boolean check(String value){
         if (value == null) return false;
-        return value.matches(this.regex);
+        return value.matches(regex);
     }
 }
 
