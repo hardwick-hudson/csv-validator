@@ -1,6 +1,6 @@
 package dev.hudson.validator.rules;
 
-public class IsIntegerRule {
+public class IsIntegerRule implements Rule {
     public boolean check(String value) {
         if (value == null) return false;
         try {

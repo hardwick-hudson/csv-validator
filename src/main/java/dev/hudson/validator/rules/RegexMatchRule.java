@@ -1,6 +1,6 @@
 package dev.hudson.validator.rules;
 
-public class RegexMatchRule {
+public class RegexMatchRule implements Rule {
     private final String regex;
 
     public RegexMatchRule(String regex){

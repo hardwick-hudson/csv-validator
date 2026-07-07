@@ -1,6 +1,6 @@
 package dev.hudson.validator.rules;
 
-public class InRangeRule {
+public class InRangeRule implements Rule {
     private final int min;
     private final int max;
 
