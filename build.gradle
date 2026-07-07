@@ -1,10 +1,14 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
 group = 'dev.hudson.validator'
 version = '1.0-SNAPSHOT'
 
+application {
+    mainClass = 'dev.hudson.validator.Main'
+}
 repositories {
     mavenCentral()
 }
