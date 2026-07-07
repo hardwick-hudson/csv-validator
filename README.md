@@ -1,7 +1,7 @@
 # csv-validator
 
 A small Java CLI for validating CSV files against per-column rules. 
-Point it at a file, declare what each file should contain, and get a
+Point it at a file, declare what each column should contain, and get a
 row-by-row failure report with script-friendly exit codes.
 
 ## Usage
